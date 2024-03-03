@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 40px;
+  color: rgb(129, 33, 161);
+}
+
+body {
+  background-color: rgb(238, 217, 185);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+.first {
+  color: blue;
+}
+
+#your_name {
+  color: tomato;
+  background-color: rgb(236, 190, 121);
+  border: 5px double salmon;
+}
