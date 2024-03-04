@@ -7,12 +7,47 @@
     <link rel="stylesheet" href="./izgledForma.css" />
   </head>
   <body>
-    <form id="formaRezervacija">
+    <form id="formaRezervacija" action="./podaci.html">
+      <h1>Reservation information:</h1>
       <label for="firstName">First name:</label>
-      <input type="text" id="firstName" placeholder="Your first name" />
+      <input
+        type="text"
+        id="firstName"
+        placeholder="Your first name"
+        required
+        minlength="3"
+      />
       <br />
       <label for="lastName">Last name: </label>
-      <input type="text" id="lastName" placeholder="Your last name" />
+      <input type="text" id="lastName" placeholder="Your last name" required />
+
+      <!--RADIO BUTTON-->
+      <br />
+      <p>Room type:</p>
+
+      <input type="radio" id="single" name="roomType" value="Single" />
+      <label for="single">Single</label><br />
+      <input type="radio" id="double" name="roomType" value="Double" />
+      <label for="double">Double</label><br />
+      <input type="radio" id="apartment" name="roomType" value="Apartment" />
+      <label for="apartment">Apartment</label>
+
+      <!--CHECKBOX-->
+      <p>The necessity You expect from your room:</p>
+      <input
+        type="checkbox"
+        id="airConditioner"
+        name="necessity"
+        value="airConditioner"
+      />
+      <label for="airConditioner">Air conditioner</label><br />
+      <input type="checkbox" id="radiator" name="necessity" value="radiator" />
+      <label for="radiator">Radiator</label><br />
+      <input type="checkbox" id="view" name="necessity" value="view" />
+      <label for="view">Beach view</label>
+      <br /><br />
+      <!--SUBMIT DUGME-->
+      <input type="submit" value="Submit" />
     </form>
   </body>
 </html>
